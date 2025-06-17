@@ -62,6 +62,8 @@ button {
 }
 
 .card {
+  display: flex;
+  flex-direction: column;
   border-radius: 1rem;
   overflow: hidden;
   max-width: 1200px;
@@ -77,6 +79,14 @@ button {
 
 .brand {
   max-width: 130px;
+}
+
+.icon {
+  width: 2.5rem;
+  padding: .5rem;
+  border-radius: 8px;
+  background-color: var(--blanco);
+  box-shadow: var(--sombra);
 }
 
 .main {
@@ -124,9 +134,11 @@ button {
   justify-content: center;
   align-items: center;
   align-self: center;
-  gap: .5rem;padding: .5rem 1rem;
+  gap: .5rem;
+  padding: .5rem 1rem;
   border-radius: 2rem;
   color: var(--negro);
+  
   background-color: var(--sombra-base);
 }
 
@@ -149,10 +161,90 @@ button {
   font-size: 0.75rem;
 }
 
-.icon {
-  width: 2.5rem;
-  padding: .5rem;
-  border-radius: 8px;
-  background-color: var(--blanco);
-  box-shadow: var(--sombra);
+
+
+/* estilos de tablet */
+
+@media screen and (min-width:768px) {
+  .brand {
+    max-width: 160px;
+  }
+
+  .card {
+    max-width: 560px;
+  }
+
+
+  .main div:first-child {
+    min-width: 260px;
+  }
+
+  .main div:last-child {
+    padding: 0 6rem;
+    gap: 0.25;
+  }
+
+  .main p {
+    font-size: 1rem;
+    line-height: 1.75rem;
+  }
+
+  .icon {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+/* estilo escrtorio */
+
+@media screen and (min-width:1024px) {
+  .card {
+    gap: 4rem;
+    max-width: 1200px;
+  }
+
+  .brand {
+    max-width: 220px;
+  }
+
+  .icon {
+    height: 60px;
+    width: 60px;
+  }
+
+  .main {
+    flex-direction: row;
+    padding: 0 4rem;
+    gap: 1.25rem;
+  
+  }
+  .main div:last-child {
+    padding: 0;
+    max-width: 600px;
+  }
+
+  .main div:first-child {
+    max-width: 360px;
+  }
+
+  .main h1 {
+    text-align: left;
+    font-size: 4rem;
+    line-height: 4rem;
+  }
+
+  .main p {
+      text-align: left;
+      font-size: 1.53rem;
+      line-height: 2rem;
+  }
+
+ .main a {
+  align-self: flex-start;
+  font-size: 1.3rem;
+ }
+
+ .footer p {
+  font-size: 1.25rem;
+ }
 }
