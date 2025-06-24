@@ -82,11 +82,18 @@ button {
 }
 
 .icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 2.5rem;
   padding: .5rem;
   border-radius: 8px;
   background-color: var(--blanco);
   box-shadow: var(--sombra);
+}
+
+.icon svg {
+  stroke: var(--sombra-base);
 }
 
 .main {
@@ -210,6 +217,14 @@ button {
   .icon {
     height: 60px;
     width: 60px;
+  }
+
+  .icon:hover {
+    background-color: var(--sombra-base);
+  }
+
+  .icon:hover svg {
+    stroke: var(--blanco);
   }
 
   .main {
