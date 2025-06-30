@@ -19,7 +19,7 @@ propiedad: var(nombre-variable);
 */
 
 :root {
-  /* scheme light mode */
+  /*  */
  --base: #88D2FC;
  --luz-base: #BDE3F9;
  --sombra-base: #3D9BD0;
@@ -29,6 +29,16 @@ propiedad: var(nombre-variable);
  --sombra: 0 2px 2px 0 #3d9ad0c1;
 
  --padding-normal: 1rem;
+}
+
+body.dark {
+
+  /* scheme dark mode */
+  --base:#3D9BD0;
+  --luz-base:#BDE3F9;
+  --sombra-base:#88D2FC;
+  --blanco:#00070B;
+  --negro:#F9FDFF;
 }
 
 * {
