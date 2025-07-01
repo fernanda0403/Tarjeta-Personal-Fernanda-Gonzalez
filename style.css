@@ -106,6 +106,18 @@ button {
   stroke: var(--sombra-base);
 }
 
+.theme-icon {
+  display: none;
+}
+
+body:not(.dark) #icono-luna {
+  display: block;
+}
+
+body.dark #icono-sol {
+  display: block;
+}
+
 .main {
   display: flex;
   flex-direction: column;
